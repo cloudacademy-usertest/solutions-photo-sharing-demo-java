@@ -102,8 +102,8 @@ public class DemoUserManagerSql extends DemoEntityManagerSql<DemoUser> implement
       @Override
       public DemoUser fromResultSet(ResultSet rs) throws SQLException {
         DemoUser user = newUser(userId);
-        user.setEmail(rs.getString(1));
-        user.setNickname(rs.getString(2));
+        user.setEmail(rs.getString(2));
+        user.setNickname(rs.getString(3));
         return user;
       }
     };
