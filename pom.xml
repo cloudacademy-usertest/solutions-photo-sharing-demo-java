@@ -7,9 +7,13 @@
 	<packaging>war</packaging>
 
 	<properties>
-		<gae.project.name>fluid-shoreline-575</gae.project.name>
-		<gae.project.version>version-1-2-0</gae.project.version>
-		<!-- Sets the project's default encoding. http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
+		<!-- properties present in build.properties ant file -->
+		<application.id>fluid-shoreline-575</application.id>
+		<application.version>version-1-2-0</application.version>
+		<application.entity.manager.factory>com.google.cloud.demo.model.nosql.DemoEntityManagerNoSqlFactory</application.entity.manager.factory>
+		<cloud.sql.jdbc.url></cloud.sql.jdbc.url>
+		<cloud.storage.bucket.name></cloud.storage.bucket.name>
+		
 		<encoding>UTF-8</encoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
