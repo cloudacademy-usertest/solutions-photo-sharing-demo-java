@@ -17,6 +17,8 @@ It is recommended for you to use [Apache Maven][3] to build the application.
 
 	mvn clean appengine:update
 
+(if it is the first time you use the gae maven plugin, it will require to authorize access to your gae projects with an oauth2 procedure)
+
 [1]: https://developers.google.com/appengine
 [2]: http://java.com/en/
 [3]: http://maven.apache.org
