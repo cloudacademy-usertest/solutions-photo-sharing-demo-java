@@ -8,7 +8,7 @@
 
 	<properties>
 		<gae.project.name>fluid-shoreline-575</gae.project.name>
-		<gae.project.version>1_2_0</gae.project.version>
+		<gae.project.version>version-1-2-0</gae.project.version>
 		<!-- Sets the project's default encoding. http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<encoding>UTF-8</encoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -67,11 +67,11 @@
 			<version>${gae.version}</version>
 		</dependency>
 		<!-- javax.annotation -->
-		<dependency>
-			<groupId>javax.annotation</groupId>
-			<artifactId>jsr250-api</artifactId>
-			<version>1.0-20050927.133100</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>javax.annotation</groupId> -->
+<!-- 			<artifactId>jsr250-api</artifactId> -->
+<!-- 			<version>1.0-20050927.133100</version> -->
+<!-- 		</dependency> -->
 	</dependencies>
 
 	<!-- <pluginRepositories> -->
