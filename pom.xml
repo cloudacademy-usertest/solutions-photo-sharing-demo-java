@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.google</groupId>
-	<artifactId>PhotoSharingDemo</artifactId>
+	<artifactId>photo-sharing-demo</artifactId>
 	<version>1.2.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -14,22 +14,17 @@
 		<cloud.sql.jdbc.url></cloud.sql.jdbc.url>
 		<cloud.storage.bucket.name></cloud.storage.bucket.name>
 		
+		<!-- general properties -->
 		<encoding>UTF-8</encoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<!-- Specify AppEngine version for your project. -->
+		
+		<!-- Google App Engine version for your project. -->
 		<gae.version>1.9.5</gae.version>
-		<!-- Datanucleus -->
-		<!-- check compatibility http://code.google.com/p/datanucleus-appengine/wiki/Compatibility -->
-		<datanucleus.version>3.1.3</datanucleus.version>
-		<datanucleus.api.jdo.version>3.1.3</datanucleus.api.jdo.version>
-		<datanucleus.gae.version>2.1.2</datanucleus.gae.version>
-		<datanucleus.plugin.version>3.1.3</datanucleus.plugin.version>
-		<jdo-api.version>[3.0, 4.0)</jdo-api.version>
 	</properties>
 
 	<dependencies>
-		<!-- App Engine Runtime Dependencies (probably not needed) -->
+		<!-- Google App Engine Dependencies -->
 		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-tools-sdk</artifactId>
@@ -46,27 +41,6 @@
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
 			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>jstl</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-		<!-- These dependencies are here just for enabling logging -->
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.7</version>
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>1.1.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-api-labs</artifactId>
-			<version>${gae.version}</version>
 		</dependency>
 		<!-- javax.annotation -->
 		<dependency> 
